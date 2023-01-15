@@ -7,7 +7,8 @@ namespace machineid {
 #include <windows.h>
 #include <intrin.h>
 #include <iphlpapi.h>
-
+#define u16 uint16_t
+#define u32 uint32_t
 // we just need this for purposes of unique machine id. So any one or two mac's is
 // fine.
 u16 hashMacAddress(PIP_ADAPTER_INFO info) {
